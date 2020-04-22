@@ -6,6 +6,8 @@ import 'route/ParentWidgetC.dart';
 import 'route/TextDemo.dart';
 import 'route/ButtonDemo.dart';
 import 'route/ImageDemo.dart';
+import 'route/CheckboxDemo.dart';
+import 'route/TextFieldAndFormDemo.dart';
 
 void main() => runApp(MyApp());
 
@@ -224,6 +226,34 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context) {
                           return ImageDemo();
+                        }));
+                      },
+                      color: Colors.blue,
+                      highlightColor: Colors.blue[700],
+                      colorBrightness: Brightness.dark,
+                      splashColor: Colors.grey,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0)),
+                    ),
+                    RaisedButton(
+                      child: Text("单选框和复选框"),
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                          return CheckboxDemo();
+                        }));
+                      },
+                      color: Colors.blue,
+                      highlightColor: Colors.blue[700],
+                      colorBrightness: Brightness.dark,
+                      splashColor: Colors.grey,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0)),
+                    ),
+                    RaisedButton(
+                      child: Text("输入框及表单"),
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                          return TextFieldAndFormDemo();
                         }));
                       },
                       color: Colors.blue,
