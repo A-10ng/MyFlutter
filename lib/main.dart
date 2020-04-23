@@ -12,6 +12,8 @@ import 'route/IndicatorDemo.dart';
 import 'route/LinearlayoutDemo.dart';
 import 'route/FlexlayoutDemo.dart';
 import 'route/FlowlayoutDemo.dart';
+import 'route/StacklayoutDemo.dart';
+import 'route/TestSpecialDemo.dart';
 
 void main() => runApp(MyApp());
 
@@ -314,6 +316,34 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context) {
                           return FlowlayoutDemo();
+                        }));
+                      },
+                      color: Colors.blue,
+                      highlightColor: Colors.blue[700],
+                      colorBrightness: Brightness.dark,
+                      splashColor: Colors.grey,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0)),
+                    ),
+                    RaisedButton(
+                      child: Text("层叠布局"),
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                          return StacklayoutDemo();
+                        }));
+                      },
+                      color: Colors.blue,
+                      highlightColor: Colors.blue[700],
+                      colorBrightness: Brightness.dark,
+                      splashColor: Colors.grey,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(20.0)),
+                    ),
+                    RaisedButton(
+                      child: Text("测试专用"),
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) {
+                          return TestSpecialDemo();
                         }));
                       },
                       color: Colors.blue,
